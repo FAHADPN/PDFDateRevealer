@@ -1,0 +1,66 @@
+/* PrivacyPolicy.css */
+
+.privacy-policy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    overflow-y: auto; /* This will add a vertical scrollbar when needed */
+    max-height: 80vh; /* Limit the height to 80% of the viewport */
+    display: flex;
+    flex-direction: column;
+  }
+  .privacy-policy-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    flex-shrink: 0; /* Prevent the heading from shrinking with scrollable content */
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+  .last-updated {
+    color: #000000;
+    font-size: 14px;
+    margin-top: -10px;
+  }
+  
+  .section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .contact-section {
+    border-bottom: none;
+  }
+  
+  .contact-section a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .scrollable-content {
+    max-height: calc(100vh - 150px); /* Limit the height to 150px less than the viewport height */
+    overflow-y: auto; /* Add a vertical scrollbar when content exceeds the height */
+    flex-grow: 1; /* Allow the scrollable content to take remaining available space */
+    
+  }
+  
